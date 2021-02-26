@@ -1,0 +1,44 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+header{
+  height: 100px;
+  background-color: #ffffff;
+}
+
+header .top,
+header .bottom{
+  height: 50%;
+}
+
+header .top{
+  padding: 20px;
+}
+
+header .top h2{
+  text-transform: capitalize;
+  color: #5f6368;
+  font-size: 22px;
+  line-height: 50%;
+}
+
+header .top h2::before{
+  content: url('https://www.gstatic.com/images/branding/googlelogo/svg/googlelogo_clr_74x24px.svg');
+  display: inline-block;
+  height: 24px;
+  width: 74px;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+header .bottom nav ul{
+  display: flex;
+  list-style: none;
+}
