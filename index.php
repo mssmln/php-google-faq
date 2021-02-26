@@ -66,7 +66,7 @@ Ci sono diverse domande con relative risposte. Gestire il “Database” e la vi
   </header>
 
   <main>
-    <section class="">
+    <section class="container">
       <?php foreach ($faqs as $faq){ // se non metti il codice html tra 2 tag php stamperà solo l'ultima voce dell'array
         // var_dump($faq);
         // $title = $faq["title"];
@@ -74,8 +74,11 @@ Ci sono diverse domande con relative risposte. Gestire il “Database” e la vi
 
 
       #} ?>
-      <p><?php echo $faq["title"] ?></p>
-      <p><?php echo $faq["text"] ?></p>
+      <div class="faq">
+        <h2><?php echo $faq["title"] ?></h2>
+        <p><?php echo $faq["text"] ?></p>
+
+      </div>
 
     <?php  }?>
 
