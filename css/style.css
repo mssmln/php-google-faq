@@ -11,6 +11,11 @@ body{
 header{
   height: 100px;
   background-color: #ffffff;
+  /* position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1; */
 }
 
 header .top,
@@ -67,6 +72,23 @@ header .bottom nav ul li a{
   text-decoration: none;
   color: #5f6368;
 }
+
+/* main */
+.container{
+  width: 1200px;
+  margin: 0 auto;
+  background-color: red;
+  height: 1000px;
+}
+
+
+/* /main */
+
+
+
+
+
+
 
 
 footer{
