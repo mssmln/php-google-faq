@@ -61,9 +61,7 @@ Ci sono diverse domande con relative risposte. Gestire il “Database” e la vi
       <h2>privacy &amp; terms</h2>
       <div class="apps">
         <i class="fas fa-ellipsis-v"></i>
-
       </div>
-
     </div>
     <div class="bottom">
       <nav>
@@ -73,39 +71,32 @@ Ci sono diverse domande con relative risposte. Gestire il “Database” e la vi
           <li><a href="#">Terms of Service</a></li>
           <li><a href="#">Technologies</a></li>
           <li><a href="#">FAQ</a></li>
-
         </ul>
       </nav>
-
     </div>
-
   </header>
+
+
 
   <main>
     <section class="container">
       <?php foreach ($faqs as $faq){ // se non metti il codice html tra 2 tag php stamperà solo l'ultima voce dell'array
         // var_dump($faq);
-        // $title = $faq["title"];
+        $title = $faq["title"];
+        $text = $faq["text"];
         // var_dump($title);
-
-
       #} ?>
+      <!-- chiudiamo php tag per inserire html tag -->
       <div class="faq">
-        <?php echo $faq["title"] // sono senza tag html perchè gli ho messi direttamente nel value del array , se qui li lasciassi, me ne troverei in più vuoti, visibili dal inspector ?>
-        <?php echo $faq["text"] ?>
-
+        <?php echo $title # avendo messo i tag html nel value del array non devi usarli qua perchè se ne creeranno in più?>
+        <?php echo $text # avendo messo i tag html nel value del array non devi usarli qua perchè se ne creeranno in più?>
       </div>
-
-    <?php  }?>
-
-    <!--  //$title ; // anche salvandola in una variabile ti stampa sempre l'ultima
-    //var_dump($title);
-    ?> -->
-
-
-
+      <!-- finito html aggiungi un altro php tag per chiudere il ciclo con la } -->
+    <?php  } # parentesi chiusura foreach ?>
     </section>
   </main>
+
+
 
   <footer>
     <nav class="container">
@@ -114,10 +105,8 @@ Ci sono diverse domande con relative risposte. Gestire il “Database” e la vi
         <li><a href="#">about google</a></li>
         <li><a href="#">privacy</a></li>
         <li><a href="#">terms</a></li>
-
       </ul>
     </nav>
-
   </footer>
 
 </body>

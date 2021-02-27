@@ -80,7 +80,6 @@ footer nav ul li a{
 .container{
   width: 1000px;
   margin: 100px auto 0;
-  /* background-color: red; */
 }
 
 .faq:first-child{
@@ -149,6 +148,7 @@ footer nav ul li:first-child{
   padding-left: 0;
 }
 
+/* tutti tranne il primo figlio mi metti il content e il padding */
 footer nav ul li:not(:first-child)::before{
   content: "\0000b7";
   padding: 0 5px;
